@@ -1,7 +1,7 @@
 const content = () => {
   return `
     <div class="container">
-    <div class="head"><h1>FX CALCULATOR</h1></div>
+    <div class="head"><h1>ZERONE <br> <span>FX CALCULATOR</span> </h1></div>
     <div class="body">
       <form action="#">
         <input type="number" id="amount" placeholder="Enter your capital" required/>
@@ -16,7 +16,11 @@ const content = () => {
         <div class="box">
           <h3>#<span id="result"></span></h3>
         </div>
+        <button id="clear">Clear</button>
       </div>
+    </div>
+    <div class="foot">
+      <p>Developed by <a href="cypherdevs.co">Cypherdevs Technologies</a>  <span>09031217041</span></p>
     </div>
   </div>
     `;

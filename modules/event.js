@@ -3,6 +3,7 @@ const calcEvent = () => {
   const circleInp = document.querySelector("#circle");
   const resultOut = document.querySelector("#result");
   const button = document.querySelector("#submit");
+  const clear = document.querySelector("#clear");
 
   button.addEventListener("click", (e) => {
     let amountInt = parseInt(amountInp.value);
@@ -21,7 +22,14 @@ const calcEvent = () => {
       return total;
     }
     fxCalc(amountInt, circleInt);
+
     resultOut.innerText = total;
+    e.preventDefault();
+  });
+  clear.addEventListener("click", (e) => {
+    resultOut.innerText = "";
+    amountInp.value = "";
+    circleInp.value = "";
     e.preventDefault();
   });
 };
