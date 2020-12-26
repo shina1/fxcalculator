@@ -13,7 +13,7 @@ const calcEvent = () => {
       let time = 1;
       //   let perInc;
       do {
-        let perInc = init * 0.2;
+        let perInc = init * 0.15;
         init = init + perInc;
         total = init;
         time++;
